@@ -1,6 +1,35 @@
 <html>
-  <body>
-    <h1>Hola</h1>
-    <script src="./src/index.js"></script>
-  </body>
+    <body>
+        <h1>Totalizador de Ventas</h1>
+        <div id="Totalizador">
+            <form id="totalizador-form">
+                <div>
+                    <label for="cantidad-input">Cantidad:</label><br />
+                    <input type="number" id="cantidad-input" /><br />
+                </div>
+                <div>
+                    <label for="precio-input">Precio:</label><br />
+                    <input type="number" id="precio-input" /><br /><br />
+                </div>
+                <div>
+                    <select id="state-selection">
+                        <option value="UT">UT</option>
+                        <option value="NV">NV</option>
+                        <option value="TX">TX</option>
+                        <option value="AL">AL</option>
+                        <option value="CA">CA</option>
+                    </select>
+                </div>
+                <br />
+                <div>
+                    <input type="submit" value="Calcular" />
+                </div>
+            </form>
+            <div>
+                <p id="total">Total: </p>
+                <p id="totalConImpuesto">Total con impuesto: </p>
+            </div>
+        </div>
+        <script src="/src/index.js"></script>
+    </body>
 </html>
